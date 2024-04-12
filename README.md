@@ -58,7 +58,7 @@ flowchart TD
     A --> B[untracked: этот файл создан, но не добавлен через git add];
     A --> C[tracked: все файлы после git add];
     A --> D[staged: файл добавлен но не закомичен git commit -m];
-    A --> E[modified файл добавлен и изменен (до/после коомита)];
+    A --> E[modified файл добавлен и изменен до или после коомита];
     B --> F[git add];
     F --> G[git commit -m];
     C --> G[git commit -m];

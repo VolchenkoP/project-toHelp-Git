@@ -52,7 +52,7 @@
 
 
 ### Статусы git status:
-'''mermaid
+```mermaid
 flowchart TD
     A[Git имеет следующие статусы: untracked/tracked, staged и modified];
     A --> B[untracked: этот файл создан, но не добавлен через git add];
@@ -64,4 +64,4 @@ flowchart TD
     C --> G[git commit -m];
     D --> G[git commit -m];
     E --> F[git add];
-'''
+```

@@ -49,3 +49,19 @@
 #### стрелки вверх и вниз для перемещения по истории команд
 
 #### Tub для автозаполнения команд и пути
+
+
+### Статусы git status:
+'''mermaid
+flowchart TD
+    A[Git имеет следующие статусы: untracked/tracked, staged и modified];
+    A --> B[untracked: этот файл создан, но не добавлен через git add];
+    A --> C[tracked: все файлы после git add];
+    A --> D[staged: файл добавлен но не закомичен git commit -m];
+    A --> E[modified файл добавлен и изменен (до/после коомита)];
+    B --> F[git add];
+    F --> G[git commit -m];
+    C --> G[git commit -m];
+    D --> G[git commit -m];
+    E --> F[git add];
+'''
